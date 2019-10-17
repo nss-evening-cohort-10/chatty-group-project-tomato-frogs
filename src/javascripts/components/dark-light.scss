@@ -1,0 +1,15 @@
+$dark-color: #111;
+$light-color: #eee;
+
+$test-color1: #32CD32;
+$text-color2: #FF69B4;
+
+.dark {
+  background-color: $dark-color;
+  color: $light-color;
+};
+
+.light {
+  background-color: $light-color;
+  color: $dark-color; 
+};

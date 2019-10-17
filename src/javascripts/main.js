@@ -1,3 +1,8 @@
 import '../styles/main.scss';
+import dark from './components/dark-light';
 
-console.error('hi');
+const init = () => {
+  dark.event();
+};
+
+init();
