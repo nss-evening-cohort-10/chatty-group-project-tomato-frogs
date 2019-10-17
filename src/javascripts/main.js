@@ -1,3 +1,9 @@
 import '../styles/main.scss';
+import './components/navbar/navbar.scss';
+import navbar from './components/navbar/navbar';
 
-console.error('hi');
+const init = () => {
+  navbar.formEnter();
+};
+
+init();

@@ -1,5 +1,9 @@
 @import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+@import "./colors";
 
 body {
-  background-color: green;
+  background-color: $background-color;
+  font-size: 10px;
+  font-family: 'Noto Sans', sans-serif;
 }
