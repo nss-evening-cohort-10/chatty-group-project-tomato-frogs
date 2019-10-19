@@ -1,11 +1,16 @@
 import '../styles/main.scss';
 import './components/navbar/navbar.scss';
+import dark from './components/darkTheme/dark-light';
+import display from './components/display/display';
 import navbar from './components/navbar/navbar';
-import timeStamp from './components/timeStamp/timeStamp';
+import size from './components/fontSize/fontSize';
+
 
 const init = () => {
   navbar.formEnter();
-  timeStamp.addTimeStamp();
+  dark.event();
+  display.displayMessages();
+  size.sizer();
 };
 
 init();

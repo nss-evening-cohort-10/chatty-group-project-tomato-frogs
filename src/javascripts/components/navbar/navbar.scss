@@ -1,16 +1,19 @@
 @import '../../../styles/colors';
 
 .nav-container {
-  background-color: #C5CAE9;
-  // margin: 0;
-  // position: absolute;
-  // top: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
   width: 100%;
   padding: 15px;
   align-items: center;
+  box-shadow: 0.5px 0.5px 10px (#d3d3d3);
 
   .form-div {
     align-items: center;
+    textarea {
+      box-shadow: 0.5px 0.5px 10px (#d3d3d3);
+    }
   }
 
   .btn {

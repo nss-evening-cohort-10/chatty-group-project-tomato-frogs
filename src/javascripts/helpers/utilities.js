@@ -1,7 +1,7 @@
 import $ from 'jquery';
 
-const printToDom = (divId, stringToPrint) => {
-  $(`#${divId}`).html(stringToPrint);
+const printToDom = (divId, string) => {
+  $(`#${divId}`).html(string);
 };
 
 export default { printToDom };
