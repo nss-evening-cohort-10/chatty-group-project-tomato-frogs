@@ -1,0 +1,14 @@
+#display-messages {
+  margin: 2em;
+  position: absolute;
+  top: 100px;
+
+  .display-msg-container {
+    padding: 10px;
+  }
+  .display-img {
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
+  }
+}
