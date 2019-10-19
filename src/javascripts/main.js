@@ -9,8 +9,9 @@ import size from './components/fontSize/fontSize';
 const init = () => {
   navbar.formEnter();
   dark.event();
+  size.upSizer();
+  size.downSizer();
   display.displayMessages();
-  size.sizer();
 };
 
 init();

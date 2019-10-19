@@ -1,11 +1,19 @@
 import $ from 'jquery';
 
-const sizer = () => {
-  $('#textSize').on('click', () => {
-    for (let i = 10; i < 50; i += 1) {
-      $('#bodySize').css('font-size', `${[i]}px`);
-    }
+const upSizer = () => {
+  $('#upSize').on('click', () => {
+    let fontSize = parseInt($('body').css('font-size'), 0);
+    fontSize = `${fontSize + 1}px`;
+    $('body').css({ 'font-size': fontSize });
   });
 };
 
-export default { sizer };
+const downSizer = () => {
+  $('#downSize').on('click', () => {
+    let fontSize = parseInt($('body').css('font-size'), 0);
+    fontSize = `${fontSize - 1}px`;
+    $('body').css({ 'font-size': fontSize });
+  });
+};
+
+export default { upSizer, downSizer };
