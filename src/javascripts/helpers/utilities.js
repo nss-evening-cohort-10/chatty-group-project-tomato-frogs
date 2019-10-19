@@ -4,4 +4,6 @@ const printToDom = (divId, string) => {
   $(`#${divId}`).html(string);
 };
 
-export default { printToDom };
+const idGenerator = () => `K${Math.random().toString(36).substr(2, 9)}`;
+
+export default { printToDom, idGenerator };

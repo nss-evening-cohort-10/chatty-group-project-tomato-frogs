@@ -13,9 +13,6 @@ const displayMessages = () => {
       <div class="message-row row">
         <div class="col-sm-8 message-text">
           <div class="row">
-            ${message.userName}
-          </div>
-          <div class="row">
             ${message.messageText}
           </div>
         </div>
