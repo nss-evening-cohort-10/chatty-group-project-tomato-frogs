@@ -9,4 +9,9 @@ const event = () => {
   });
 };
 
-export default { event };
+const themeChecks = () => {
+  const color = getElementsByClass();
+  
+}
+
+export default { event, themeChecks };
