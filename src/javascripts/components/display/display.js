@@ -14,18 +14,21 @@ const displayMessages = (messagez) => {
   let domString = '';
   domString += '<div class="container display-msg-container">';
   messages.forEach((message) => {
-    domString += `<div class="row" ${message.messageId}>
-        <div class="col-sm-2 user-icon">
-          <div class="row"> <img class="display-img" src="" /> </div>
-          <div class="row"></div>
-        </div>
+    domString += `
+      <div class="message-row row">
         <div class="col-sm-8 message-text">
-          ${message.messageText}
+          <div class="row">
+            ${message.userName}
+          </div>
+          <div class="row">
+            ${message.messageText}
+          </div>
         </div>
-        <div class="col-sm">
-        ${message.timeStamp}
+        <div class="col-sm timestamp">
+          ${moment().format('LLL')}
         </div>
-      </div>`;
+      </div>
+      `;
   });
   domString += '</div>';
   util.printToDom('display-messages', domString);
