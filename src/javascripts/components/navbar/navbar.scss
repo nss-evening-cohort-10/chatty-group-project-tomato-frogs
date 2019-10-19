@@ -8,6 +8,8 @@
   padding: 15px;
   align-items: center;
   box-shadow: 0.5px 0.5px 10px (#d3d3d3);
+  max-height: 120px;
+  overflow: auto;
 
   .form-div {
     align-items: center;
