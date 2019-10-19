@@ -24,8 +24,4 @@ const displayMessages = (msgArray) => {
   util.printToDom('display-messages', domString);
 };
 
-$('body').on('click', '.btn btn-danger', () => {
-  console.log('test');
-});
-
 export default { displayMessages };
