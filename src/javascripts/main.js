@@ -1,5 +1,6 @@
 import '../styles/main.scss';
 import './components/navbar/navbar.scss';
+import 'bootstrap';
 import dark from './components/darkTheme/dark-light';
 import display from './components/display/display';
 import navbar from './components/navbar/navbar';
@@ -11,6 +12,8 @@ const init = () => {
   dark.event();
   size.upSizer();
   size.downSizer();
+  size.upSizerModal();
+  size.downSizerModal();
   display.displayMessages();
 };
 

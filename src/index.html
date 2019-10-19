@@ -9,6 +9,42 @@
 
 <body class="light" id="bodySize">
 
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Please choose your theme</h5>
+        <p></p>
+          <div class="float-right">
+        <button class="btn btn-outline-primary" id="modalUpSize">+</button>
+        <button class="btn btn-outline-primary" id="modalDownSize">-</button>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+          </div>
+      </div>
+      <div class="modal-body">
+          <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+              <label class="form-check-label" for="exampleRadios1">
+                Light
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                  Dark
+                </label>
+              </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
   <nav class="nav-container d-flex flex-row navToggleLight">
     <div class="col-2" href="#"></div>
     <form class="col-7 form-div d-flex">
@@ -19,18 +55,22 @@
       <div class="custom-theme-switch">
           <button class="btn btn-outline-primary" id="switch">Switch Theme</button>
       </div>
-      <div class="text-size-switch btn-group-horizontal">
+      <div class="text-size-switch">
           <button class="btn btn-outline-primary" id="upSize">+1 Font</button>
           <button class="btn btn-outline-primary" id="downSize">-1 Font</button>
         </div>
       <div class="clear-messages">
         <button class="btn btn-outline-primary">clear messages</button>
       </div>
+      <div class="tigger">
+        <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModalCenter">
+          Launch demo modal
+        </button>
+      </div>
     </div>
   </nav>
 
-  <div id="display-messages"></div>
-
+  <div id="display-messages"></div>  
 
 </body>
 </html>
