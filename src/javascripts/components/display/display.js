@@ -1,4 +1,4 @@
-// import moment from 'moment';
+import moment from 'moment';
 import $ from 'jquery';
 import msgData from '../../helpers/data/messages';
 import util from '../../helpers/utilities';
