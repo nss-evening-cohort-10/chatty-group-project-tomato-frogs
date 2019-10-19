@@ -1,7 +1,10 @@
 import $ from 'jquery';
+import msgData from '../../helpers/data/messages';
+import display from '../display/display';
 
 const emptyWords = () => {
-  $('#display-messages').html('');
+  msgData.setMessages([]);
+  display.displayMessages();
 };
 
 

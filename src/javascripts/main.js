@@ -11,8 +11,9 @@ import clearButton from './components/clearButton/clearButton';
 const init = () => {
   navbar.formEnter();
   dark.event();
+  size.upSizer();
+  size.downSizer();
   display.displayMessages();
-  size.sizer();
   clearButton.clearFunc();
 };
 
