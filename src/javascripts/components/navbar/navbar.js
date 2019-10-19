@@ -1,19 +1,25 @@
 import $ from 'jquery';
-import add from '../addMessage/addMessage';
-import util from '../../helpers/utilities';
 import messages from '../../helpers/data/messages';
+import display from '../display/display';
+import util from '../../helpers/utilities';
 
-const onEnterCreateObj = () => {
-  $('#text-area-id').keydown((event) => {
-    const newObject = {};
-    if (event.key === 'Enter') {
-      const messageValue = $('#text-area-id').value();
-      const messageId = util.idGenerator();
-      const newMessage = add.createMessageObj(messageValue, messageId);
-      return newMessage;
+const addMessage = (event) => {
+  if (event.key === 'Enter') {
+    if ($('#text-area-id').val() !== '') {
+      const newMsgObj = {};
+      newMsgObj.messageId = util.idGenerator();
+      newMsgObj.messageText = $('#text-area-id').val();
+      newMsgObj.timeStamp = 'timestamp';
+      event.preventDefault();
+      const newMsgArr = messages.getMessages();
+      newMsgArr.unshift(newMsgObj);
+      display.displayMessages(newMsgArr);
     }
-    return newObject;
-  });
+  }
 };
 
-export default { onEnterCreateObj };
+const addMsgEvent = () => {
+  $('body').keypress(addMessage);
+};
+
+export default { addMsgEvent };
