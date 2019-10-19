@@ -7,7 +7,26 @@
   <title>Chit Chat</title>
 </head>
 <body>
-  <button class="btn btn-primary">Chatter</button>
-  <div id="displayedMessages"></div>
+
+  <nav class="nav-container d-flex flex-row">
+    <div class="col-2" href="#">Logo here</div>
+    <form class="col-7 form-div d-flex">
+      <label for="exampleFormControlTextarea1"></label>
+      <textarea placeholder="input text here..." class="form-control" id="exampleFormControlTextarea1" rows="3" input-type="submit"></textarea>
+    </form>
+    <div class="col-3 d-flex justify-content-center">
+      <div class="custom-theme-switch row">
+      </div>
+      <div class="text-size-switch row">
+        </div>
+      <div class="clear-messages row">
+        <button id="clearButton" class="btn btn-outline-primary">clear messages</button>
+      </div>
+    </div>
+  </nav>
+
+  <div id="displayedMessages">
+    <p>Hi</p>
+  </div>
 </body>
 </html>
