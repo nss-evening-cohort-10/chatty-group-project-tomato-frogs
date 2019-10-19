@@ -16,4 +16,22 @@ const downSizer = () => {
   });
 };
 
-export default { upSizer, downSizer };
+const upSizerModal = () => {
+  $('#modalUpSize').on('click', () => {
+    let fontSize = parseInt($('#exampleModalCenter').css('font-size'), 0);
+    fontSize = `${fontSize + 1}px`;
+    $('#exampleModalCenter').css({ 'font-size': fontSize });
+  });
+};
+
+const downSizerModal = () => {
+  $('#modalDownSize').on('click', () => {
+    let fontSize = parseInt($('#exampleModalCenter').css('font-size'), 0);
+    fontSize = `${fontSize - 1}px`;
+    $('#exampleModalCenter').css({ 'font-size': fontSize });
+  });
+};
+
+export default {
+  upSizer, downSizer, upSizerModal, downSizerModal,
+};
