@@ -1,4 +1,3 @@
-// import $ from 'jquery';
 import msgData from '../../helpers/data/messages';
 import util from '../../helpers/utilities';
 
@@ -7,7 +6,7 @@ import './display.scss';
 const displayMessages = () => {
   const messages = msgData.getMessages();
   let domString = '';
-  domString += '<div class="container display-msg-container"></div>';
+  domString += '<div class="container display-msg-container">';
   messages.forEach((message) => {
     domString += `<div class="row">
         <div class="col-sm-2 user-icon">
