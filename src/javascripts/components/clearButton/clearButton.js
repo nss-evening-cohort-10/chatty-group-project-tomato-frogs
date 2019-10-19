@@ -1,7 +1,7 @@
 import $ from 'jquery';
 
 const emptyWords = () => {
-  $('#displayedMessages').html('');
+  $('#display-messages').html('');
 };
 
 

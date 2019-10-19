@@ -1,9 +1,14 @@
 @import "~bootstrap/scss/bootstrap";
+@import '../javascripts/components/darkTheme/dark-light.scss';
+@import '../javascripts/components/navbar/navbar.scss';
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
 @import "./colors";
 
 body {
   background-color: $background-color;
-  font-size: 10px;
   font-family: 'Noto Sans', sans-serif;
-}
+};
+
+#bodySize {
+  font-size: 10px;
+};

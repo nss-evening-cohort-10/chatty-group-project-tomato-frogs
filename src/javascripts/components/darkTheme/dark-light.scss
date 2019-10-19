@@ -1,0 +1,22 @@
+$dark-color: #111;
+$light-color: #eee;
+$nav-light:#C5CAE9;
+$nav-dark: #00CED1;
+
+.dark {
+  background-color: $dark-color;
+  color: $light-color;
+};
+
+.light {
+  background-color: $light-color;
+  color: $dark-color;
+};
+
+.navToggleLight {
+  background-color: $nav-light;
+};
+
+.navToggleDark {
+  background-color: $nav-dark;
+};
