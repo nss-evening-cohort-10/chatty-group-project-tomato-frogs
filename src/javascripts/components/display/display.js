@@ -1,7 +1,8 @@
+import moment from 'moment';
 import msgData from '../../helpers/data/messages';
 import util from '../../helpers/utilities';
-
 import './display.scss';
+
 
 const displayMessages = () => {
   const messages = msgData.getMessages();
@@ -17,7 +18,7 @@ const displayMessages = () => {
           ${message.messageText}
         </div>
         <div class="col-sm">
-          timestamp
+        ${moment().format('LLL')}
         </div>
       </div>`;
   });
