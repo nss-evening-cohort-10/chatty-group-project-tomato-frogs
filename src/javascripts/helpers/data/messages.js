@@ -1,4 +1,4 @@
-const messages = [
+let messages = [
 
   {
     messageId: 'message1',
@@ -28,5 +28,8 @@ const messages = [
 ];
 
 const getMessages = () => messages;
+const setMessages = (newArr) => {
+  messages = newArr;
+};
 
-export default { getMessages };
+export default { getMessages, setMessages };
