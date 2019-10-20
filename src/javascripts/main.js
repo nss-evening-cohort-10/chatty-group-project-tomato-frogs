@@ -15,6 +15,8 @@ const init = () => {
   dark.event();
   size.upSizer();
   size.downSizer();
+  size.upSizerModal();
+  size.downSizerModal();
   display.displayMessages(msgArray);
   clearButton.clearFunc();
 };
