@@ -3,6 +3,7 @@ import messages from '../../helpers/data/messages';
 import display from '../display/display';
 import util from '../../helpers/utilities';
 
+
 const addMessage = (event) => {
   if (event.key === 'Enter') {
     if ($('#text-area-id').val() !== '') {
