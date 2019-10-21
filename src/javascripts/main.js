@@ -11,6 +11,7 @@ import msgData from './helpers/data/messages';
 const msgArray = msgData.getMessages();
 
 const init = () => {
+  display.displayMessages(msgArray);
   navbar.addMsgEvent();
   dark.darkInit();
   size.sizeInit();
