@@ -18,48 +18,81 @@
           <div class="float-right">
         <button class="btn btn-outline-primary" id="modalUpSize">+</button>
         <button class="btn btn-outline-primary" id="modalDownSize">-</button>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
           </div>
       </div>
       <div class="modal-body">
           <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked="checked">
+              <input class="form-check-input radio" type="radio" name="exampleRadios" id="light" value="option1" checked="checked">
               <label class="form-check-label" for="exampleRadios1">
                 Light
               </label>
             </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                <label class="form-check-label" for="exampleRadios1">
-                  Dark
-                </label>
-              </div>
+          <div class="form-check form-check-inline">
+              <input class="form-check-input radio" type="radio" name="exampleRadios" id="dark" value="option1">
+              <label class="form-check-label" for="exampleRadios1">
+                Dark
+              </label>
+            </div>
       </div>
       <div class="modal-body">
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+            <input class="form-check-input radio" type="radio" name="exampleRadios" id="danger" value="option1">
             <label class="form-check-label" for="exampleRadios1">
-              Preset 1
+              Autumn
             </label>
           </div>
           <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+              <input class="form-check-input radio" type="radio" name="exampleRadios" id="warning" value="option1">
               <label class="form-check-label" for="exampleRadios1">
-                Preset 2
+                Honeycomb
               </label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+              <input class="form-check-input radio" type="radio" name="exampleRadios" id="success" value="option1">
               <label class="form-check-label" for="exampleRadios1">
-                Preset 3
+                Halloween
               </label>
             </div>
     </div>
+          <div class="modal-body">
+            <div class="form-check form-check-inline">
+              <div>
+                <div>
+                    <input class="form-check-input radio" type="radio" name="exampleRadios" id="custom" value="option1">
+                    <label class="form-check-label" for="exampleRadios1">
+                      Customize
+                    </label>
+              <p>Choose your own background, font, nav, textarea, and message container colors</p>
+                <input type="color" id="background" name="background"
+                value="#FFFFFF">
+              <label for="background">Background</label>
+          </div>
+     
+     <div>
+         <input type="color" id="text" name="text"
+                 value="#212121">
+         <label for="text">Font</label>
+            </div>
+                 <div>
+         <input type="color" id="nav" name="nav"
+                 value="#C5CAE9">
+         <label for="nav">nav</label>
+         </div>
+         <div>
+            <input type="color" id="textarea" name="textarea"
+                    value="#EEEEEE">
+            <label for="textarea">textarea</label>
+            </div>
+            <div>
+                <input type="color" id="messageDisplay" name="messageDisplay"
+                        value="#6495ED">
+                <label for="messageDisplay">message display field</label>
+                </div>
+          </div>
+            </div>
+          </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Save changes</button>
+        <button type="button" class="btn btn-outline-primary" data-dismiss="modal" id="save">Save and Close</button>
       </div>
     </div>
   </div>
@@ -73,7 +106,9 @@
     </form>
     <div class="col-3 d-flex justify-content-center btn-group-vertical">
       <div class="custom-theme-switch">
-          <button class="btn btn-outline-primary" id="switch">Switch Theme</button>
+          <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModalCenter">
+              Change Theme
+            </button>
       </div>
       <div class="text-size-switch">
           <button class="btn btn-outline-primary" id="upSize">+1 Font</button>
@@ -81,11 +116,6 @@
         </div>
       <div class="clear-messages">
         <button id="clearButton" class="btn btn-outline-primary">clear messages</button>
-      </div>
-      <div class="tigger">
-        <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModalCenter">
-          Launch demo modal
-        </button>
       </div>
     </div>
   </nav>
