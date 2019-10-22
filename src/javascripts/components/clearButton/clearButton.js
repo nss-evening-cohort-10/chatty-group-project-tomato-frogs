@@ -3,8 +3,9 @@ import msgData from '../../helpers/data/messages';
 import display from '../display/display';
 
 const emptyWords = () => {
-  msgData.setMessages([]);
-  display.displayMessages();
+  let emptyArr = msgData.setMessages();
+  emptyArr = [];
+  display.displayMessages(emptyArr);
 };
 
 

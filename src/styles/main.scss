@@ -13,3 +13,13 @@ body {
 #bodySize {
   font-size: 10px;
 };
+
+#logo {
+  max-height: 200px;
+  overflow: hidden;
+  align-items: center;
+}
+
+.modal {
+  color: $dark-color;
+};

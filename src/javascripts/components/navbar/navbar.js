@@ -11,9 +11,8 @@ const addMessage = (event) => {
       newMsgObj.messageText = $('#text-area-id').val();
       newMsgObj.timeStamp = 'timestamp';
       event.preventDefault();
-      const newMsgArr = messages.getMessages();
-      newMsgArr.unshift(newMsgObj);
-      display.displayMessages(newMsgArr);
+      messages.setMessages(newMsgObj);
+      display.displayMessages(messages.getMessages());
     }
   }
 };
