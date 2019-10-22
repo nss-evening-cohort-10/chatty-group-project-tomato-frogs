@@ -5,6 +5,8 @@ import util from '../../helpers/utilities';
 
 const addMessage = (event) => {
   if (event.key === 'Enter') {
+    event.preventDefault();
+    const text = document.getElementById('text-area-id');
     if ($('#text-area-id').val() !== '') {
       const newMsgObj = {};
       newMsgObj.messageId = util.idGenerator();
@@ -14,6 +16,7 @@ const addMessage = (event) => {
       messages.setMessages(newMsgObj);
       display.displayMessages(messages.getMessages());
     }
+    text.value = '';
   }
 };
 
