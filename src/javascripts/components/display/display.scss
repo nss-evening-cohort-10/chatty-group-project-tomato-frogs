@@ -20,17 +20,26 @@
     background-color: $lightblue;
     width: 60%;
     border-radius: 10px;
-    }
-    .message-text {
-      padding: 4px;
-      margin: 4px 10px;
-    }
+  }
 
-    .timestamp {
-      text-align: right;
-      font-size: 0.8em;
+  .message-text {
+    padding: 4px;
+    margin: 4px 10px;
+  }
+
+  .delete {
+    color: $red;
+    text-align: right;
+    padding: 2px 2px 8px 2px;
+    &:hover {
+      color: $darkred;
     }
   }
+  .timestamp {
+    text-align: right;
+    font-size: 0.8em;
+  }
+}
 
   .display-img {
     height: 50px;
