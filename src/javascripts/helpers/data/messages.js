@@ -1,4 +1,4 @@
-let messages = [
+const messages = [
 
   {
     messageId: 'message1',
@@ -85,8 +85,8 @@ const getMessages = () => {
   return messages;
 };
 
-const setMessages = (newArr) => {
-  messages = newArr;
+const setMessages = (newMsgObj) => {
+  messages.unshift(newMsgObj);
 };
 
 export default { getMessages, setMessages };

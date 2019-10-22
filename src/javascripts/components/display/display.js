@@ -24,4 +24,5 @@ const displayMessages = (msgArray) => {
   util.printToDom('display-messages', domString);
 };
 
+/* <i class="fas fa-times"></i> */
 export default { displayMessages };
