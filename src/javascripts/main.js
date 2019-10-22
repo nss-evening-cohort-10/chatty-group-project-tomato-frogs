@@ -13,11 +13,9 @@ const msgArray = msgData.getMessages();
 const init = () => {
   display.displayMessages(msgArray);
   navbar.addMsgEvent();
-  dark.event();
-  size.upSizer();
-  size.downSizer();
-  size.upSizerModal();
-  size.downSizerModal();
+  dark.darkInit();
+  size.sizeInit();
+  display.displayMessages(msgArray);
   clearButton.clearFunc();
 };
 
