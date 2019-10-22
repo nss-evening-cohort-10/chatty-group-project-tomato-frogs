@@ -19,6 +19,7 @@ const init = () => {
   display.displayMessages(msgArray);
   clearButton.clearFunc();
   gif.gifMaker();
+  display.deleteMsgEvent();
 };
 
 init();
