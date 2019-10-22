@@ -66,7 +66,7 @@ const customBack = () => {
   const choiceNav = colorNav.value;
   const colorTextA = colorTextArea.value;
   const colorDisplayMess = colorDisplayMessage.value;
-  $('body').removeClass('light dark autumn honeycomb success');
+  $('body').removeClass('light dark autumn honeycomb halloween');
   $('body').addClass('custom');
   $('.custom').css('background-color', `${choiceBack}`);
   $('.custom').css('color', `${choiceFont}`);
