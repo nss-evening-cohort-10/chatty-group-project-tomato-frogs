@@ -1,5 +1,9 @@
 @import '../../../styles/colors';
 
+.custom {
+  a: white;
+};
+
 .dark {
   background-color: $dark-color;
   color: $light-color;
@@ -49,7 +53,7 @@
   background-size: cover;
   color: $dark-color;
   nav {
-    background-color: cornsilk;
+    background-color: gold;
   };
   textarea {
     background-color: lemonchiffon;

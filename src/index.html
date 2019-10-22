@@ -13,7 +13,7 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Please choose your theme</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">Please choose your theme<div id="inner"></div></h5>
         <p></p>
           <div class="float-right">
         <button class="btn btn-outline-primary" id="modalUpSize">+</button>
@@ -76,22 +76,17 @@
                  <div>
          <input type="color" id="nav" name="nav"
                  value="#C5CAE9">
-         <label for="nav">nav</label>
+         <label for="nav">Nav</label>
          </div>
          <div>
             <input type="color" id="textarea" name="textarea"
                     value="#EEEEEE">
-            <label for="textarea">textarea</label>
+            <label for="textarea">Textarea</label>
             </div>
             <div>
                 <input type="color" id="messageDisplay" name="messageDisplay"
                         value="#6495ED">
-                <label for="messageDisplay">message display field</label>
-                </div>
-                <div class="deleteThis">
-                <input id="searchText" type="text" placeholder="Search...">
-                <button class="btn-outline-primary" id="searchgifs" type="submit">Go</button>
-                <div id="inner"></div>
+                <label for="messageDisplay">Message display field</label>
                 </div>
           </div>
             </div>
@@ -104,7 +99,7 @@
 </div>
 
   <nav class="nav-container d-flex flex-row navToggleLight">
-    <div class="col-2" href="#"></div>
+    <div class="col-2" href="#"><img id="logo" src="./javascripts/images/chit chat Logo (1).png" alt="logo"/></div>
     <form class="col-7 form-div d-flex">
       <label for="text-area-id"></label>
       <textarea placeholder="input text here..." class="form-control light" id="text-area-id" rows="3" input-type="submit"></textarea>
@@ -125,7 +120,7 @@
     </div>
   </nav>
 
-  <div id="display-messages"></div>  
+  <div id="display-messages"></div>
 
 </body>
 </html>
