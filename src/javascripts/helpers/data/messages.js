@@ -27,7 +27,13 @@ const messages = [
   },
 ];
 
-const getMessages = () => messages;
+const getMessages = () => {
+  if (messages.length > 19) {
+    messages.pop();
+    return messages;
+  }
+  return messages;
+};
 
 const setMessages = (newMsgObj) => {
   messages.unshift(newMsgObj);

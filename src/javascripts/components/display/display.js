@@ -8,7 +8,7 @@ const displayMessages = (msgArray) => {
   domString += '<div class="container display-msg-container">';
   msgArray.forEach((message) => {
     domString += `
-      <div class="message-row row">
+      <div class="message-row row ">
         <div class="col-sm-8 message-text">
           <div class="row">
             ${message.messageText}
