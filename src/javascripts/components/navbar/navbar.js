@@ -13,10 +13,10 @@ const addMessage = (event) => {
       newMsgObj.timeStamp = 'timestamp';
       event.preventDefault();
       console.log(newMsgObj);
-      const newMsgArr = messages.getMessages();
-      newMsgArr.unshift(newMsgObj);
-      display.displayMessages(newMsgArr);
-      console.log(newMsgArr);
+      messages.setMessages(newMsgObj);
+      // const newMsgArr = messages.getMessages();
+      // newMsgArr.unshift(newMsgObj);
+      display.displayMessages(messages.getMessages());
     }
   }
 };
