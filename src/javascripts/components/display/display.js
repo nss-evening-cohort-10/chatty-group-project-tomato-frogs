@@ -15,11 +15,13 @@ const displayMessages = (msgArray) => {
             ${message.messageText}
           </div>
         </div>
-        <div class="col-sm timestamp">
+        <div class="col-sm timestamp d-flex flex-items-end">
+          <div class="row align-self-end">
           ${moment().format('LLL')}
-        </div>
-        <div class="col-sm">
-        <button type="button" class="btn btn-danger delete">Delete</button>
+          </div>
+          <div class="row">
+            <i class="fas fa-times delete"></i>
+          </div>
         </div>
       </div>
       `;
@@ -27,6 +29,8 @@ const displayMessages = (msgArray) => {
   domString += '</div>';
   util.printToDom('display-messages', domString);
 };
+
+// <button type="button" class="btn btn-danger delete">Delete</button>
 
 const deleteMsgEvent = () => {
   $('body').on('click', '.delete', (event) => {
@@ -38,6 +42,5 @@ const deleteMsgEvent = () => {
     displayMessages(messages.getMessages());
   });
 };
-deleteMsgEvent();
 
 export default { displayMessages, deleteMsgEvent };
