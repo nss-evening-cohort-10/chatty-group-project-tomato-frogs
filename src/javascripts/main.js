@@ -18,6 +18,9 @@ const init = () => {
   size.downSizer();
   size.upSizerModal();
   size.downSizerModal();
+  dark.darkInit();
+  size.sizeInit();
+  display.displayMessages(msgArray);
   clearButton.clearFunc();
 };
 

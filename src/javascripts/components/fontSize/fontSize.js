@@ -32,6 +32,11 @@ const downSizerModal = () => {
   });
 };
 
-export default {
-  upSizer, downSizer, upSizerModal, downSizerModal,
+const sizeInit = () => {
+  upSizer();
+  downSizer();
+  upSizerModal();
+  downSizerModal();
 };
+
+export default { sizeInit };
