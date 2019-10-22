@@ -11,10 +11,10 @@ const addMessage = (event) => {
       const newMsgObj = {};
       newMsgObj.messageId = util.idGenerator();
       newMsgObj.messageText = $('#text-area-id').val();
-      newMsgObj.timeStamp = 'timestamp';
-      event.preventDefault();
+      newMsgObj.timeStamp = '';
       messages.setMessages(newMsgObj);
-      display.displayMessages(messages.getMessages());
+      const messageData = messages.getMessages();
+      display.displayMessages(messageData);
     }
     text.value = '';
   }

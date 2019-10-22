@@ -35,12 +35,21 @@ const getMessages = () => {
   return messages;
 };
 
-const setMessages = (newMsgObj) => {
-  messages.unshift(newMsgObj);
+const setMessages = (msgObj) => {
+  messages.unshift(msgObj);
 };
 
 const msgToDelete = (messageIdToDelete) => {
   messages = messages.filter((message) => message.messageId !== messageIdToDelete);
 };
 
-export default { getMessages, setMessages, msgToDelete };
+const deleteAll = () => {
+  messages = [];
+};
+
+export default {
+  getMessages,
+  setMessages,
+  msgToDelete,
+  deleteAll,
+};
