@@ -55,7 +55,7 @@ const displayMessages = (msgArray) => {
 const deleteMsgEvent = () => {
   $('body').on('click', '.delete', (event) => {
     event.preventDefault();
-    console.log($(event.target).parents('.msg'));
+    // console.log($(event.target).parents('.msg'));
     $(event.target).parents('.msg').attr('id');
     const idToDelete = $(event.target).parents('.msg').attr('id');
     messages.msgToDelete(idToDelete);
