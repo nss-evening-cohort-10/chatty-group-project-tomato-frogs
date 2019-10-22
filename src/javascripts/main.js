@@ -7,6 +7,7 @@ import navbar from './components/navbar/navbar';
 import size from './components/fontSize/fontSize';
 import clearButton from './components/clearButton/clearButton';
 import msgData from './helpers/data/messages';
+import gif from './components/gif/gif';
 
 const msgArray = msgData.getMessages();
 
@@ -17,6 +18,7 @@ const init = () => {
   size.sizeInit();
   display.displayMessages(msgArray);
   clearButton.clearFunc();
+  gif.gifMaker();
   display.deleteMsgEvent();
 };
 
