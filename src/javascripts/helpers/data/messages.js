@@ -1,4 +1,4 @@
-const messages = [
+let messages = [
 
   {
     messageId: 'message1',
@@ -39,4 +39,9 @@ const setMessages = (newMsgObj) => {
   messages.unshift(newMsgObj);
 };
 
-export default { getMessages, setMessages };
+const msgToDelete = (messageIdToDelete) => {
+  messages = messages.filter((message) => message.messageId !== messageIdToDelete);
+};
+
+
+export default { getMessages, setMessages, msgToDelete };

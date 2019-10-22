@@ -13,6 +13,7 @@ const addMessage = (event) => {
       event.preventDefault();
       messages.setMessages(newMsgObj);
       display.displayMessages(messages.getMessages());
+      //test
     }
   }
 };
