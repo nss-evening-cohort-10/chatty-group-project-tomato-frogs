@@ -9,11 +9,7 @@ const displayMessages = (msgArray) => {
   domString += '<div class="container display-msg-container">';
   msgArray.forEach((message) => {
     domString += `
-<<<<<<< HEAD
       <div class="message-row row msg" id="${message.messageId}">
-=======
-      <div class="message-row row ">
->>>>>>> master
         <div class="col-sm-8 message-text">
           <div class="row">
             ${message.messageText}
@@ -43,7 +39,5 @@ const deleteMsgEvent = () => {
   });
 };
 deleteMsgEvent();
-
-/* <i class="fas fa-times"></i> */
 
 export default { displayMessages, deleteMsgEvent };
