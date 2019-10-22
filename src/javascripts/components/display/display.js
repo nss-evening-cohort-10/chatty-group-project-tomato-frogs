@@ -42,6 +42,5 @@ const deleteMsgEvent = () => {
     displayMessages(messages.getMessages());
   });
 };
-deleteMsgEvent();
 
 export default { displayMessages, deleteMsgEvent };

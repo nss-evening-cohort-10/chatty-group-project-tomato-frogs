@@ -8,7 +8,6 @@ const emptyWords = () => {
   display.displayMessages(emptyArr);
 };
 
-
 const clearFunc = () => {
   $('#clearButton').click(emptyWords);
 };
