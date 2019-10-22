@@ -1,4 +1,4 @@
-const messages = [
+let messages = [
 
   {
     messageId: 'message1',
