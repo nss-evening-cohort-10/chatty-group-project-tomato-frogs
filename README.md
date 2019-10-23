@@ -14,11 +14,11 @@ An application allowing a user to have a conversation and adjust the themes and 
 
 ## Screenshot(s)
 * Main View
-![Main View](https://cdn.pixabay.com/photo/2017/08/04/05/37/coming-soon-2579123_960_720.jpg)
+![Main View](https://raw.githubusercontent.com/nss-evening-cohort-10/chatty-group-project-tomato-frogs/master/screenshots/chatty1.PNG)
 * Details
-![]()
-![]()
-![]()
+![Detail1](https://raw.githubusercontent.com/nss-evening-cohort-10/chatty-group-project-tomato-frogs/master/screenshots/chatty2.PNG)
+![Detail2](https://raw.githubusercontent.com/nss-evening-cohort-10/chatty-group-project-tomato-frogs/master/screenshots/chatty3.PNG)
+![Detail3](https://raw.githubusercontent.com/nss-evening-cohort-10/chatty-group-project-tomato-frogs/master/screenshots/chatty4.PNG)
 
 ## Instructions for how to run the project
 
