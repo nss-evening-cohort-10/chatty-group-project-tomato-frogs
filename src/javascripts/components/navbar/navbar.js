@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import moment from 'moment';
 import messages from '../../helpers/data/messages';
 import display from '../display/display';
 import util from '../../helpers/utilities';
@@ -11,7 +12,7 @@ const addMessage = (event) => {
       const newMsgObj = {};
       newMsgObj.messageId = util.idGenerator();
       newMsgObj.messageText = $('#text-area-id').val();
-      newMsgObj.timeStamp = '';
+      newMsgObj.timeStamp = `${moment().format('LLL')}`;
       messages.setMessages(newMsgObj);
       const messageData = messages.getMessages();
       display.displayMessages(messageData);
