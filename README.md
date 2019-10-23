@@ -2,7 +2,7 @@
 
 ## Description
 
-An application allowing users... 
+An application allowing users...
 
 ## Technologies Used
 
@@ -14,9 +14,12 @@ An application allowing users...
 
 
 ## Screenshot(s)
-
+* Main View
 ![Main View](https://cdn.pixabay.com/photo/2017/08/04/05/37/coming-soon-2579123_960_720.jpg)
-
+* Details
+![]()
+![]()
+![]()
 
 ## Instructions for how to run the project
 
