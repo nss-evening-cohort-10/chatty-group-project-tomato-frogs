@@ -1,8 +1,7 @@
 # Tomato Frogs Chat App: chit-chat
 
 ## Description
-
-An application allowing users...
+An application allowing a user to have a conversation and adjust the themes and font size.
 
 ## Technologies Used
 
