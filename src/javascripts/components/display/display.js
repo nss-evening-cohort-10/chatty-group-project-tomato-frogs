@@ -1,5 +1,4 @@
 import $ from 'jquery';
-import moment from 'moment';
 import util from '../../helpers/utilities';
 import './display.scss';
 import messages from '../../helpers/data/messages';
@@ -8,8 +7,7 @@ const displayMessages = (msgArray) => {
   let domString = '';
   domString += '<div class="container display-msg-container">';
   msgArray.forEach((message) => {
-    if (message.messageId[0] === 'm') {
-      domString += `
+    domString += `
       <div class="message-row row msg" id="${message.messageId}">
         <div class="col-sm-8 message-text">
           <div class="row">
@@ -26,25 +24,6 @@ const displayMessages = (msgArray) => {
         </div>
       </div>
       `;
-    } else {
-      domString += `
-      <div class="message-row row msg" id="${message.messageId}">
-        <div class="col-sm-8 message-text">
-          <div class="row">
-            ${message.messageText}
-          </div>
-        </div>
-        <div class="col-sm timestamp d-flex flex-items-end">
-          <div class="row align-self-end">
-          ${moment().format('LLL')}
-          </div>
-          <div class="row">
-            <i class="fas fa-times delete"></i>
-          </div>
-        </div>
-      </div>
-      `;
-    }
   });
   domString += '</div>';
   util.printToDom('display-messages', domString);
